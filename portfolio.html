@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green header */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        h2 {
+            color: #4CAF50; /* Green heading */
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #009688; /* Teal subheading */
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .project, .education, .experience, .certifications, .skills, .services {
+            margin-bottom: 20px;
+        }
+
+        .skills ul, .services ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skills li, .services li {
+            background-color: #009688; /* Teal color for skills and services */
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: calc(33.33% - 10px); /* Three items per row */
+            box-sizing: border-box;
+        }
+
+        .contact {
+            background-color: #4CAF50; /* Green color for contact section */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section, .contact {
+            animation: fadeInUp 1s ease;
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 style="color: #111312;">ADITYA MAWALKAR</h1>
+                <h4>
+                    <ul>
+                        <li>Bangalore, India</li>
+                        <li>adityamawalkar99@gmail.com</li>
+                        <li>9284866652</li>
+                    </ul>
+                </h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Experienced Software Engineer with expertise in AWS, Salesforce administration, and have good knowledge of Python, SQL, Linux, Docker, Terraform, etc. Proficient in a wide range of AWS services, including VPC, EC2, IAM, and S3, and skilled in Salesforce platform management. Strong customer service background and effective communication skills. Japanese language proficiency (N5 level) and ongoing pursuit of JLPT N3 certification. B.E. in Electronics and Telecom. AWS Certified Solutions Architect - Associate and Salesforce Administrator. Seeking a challenging role to leverage my technical skills and contribute to organizational success.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>AWS</li>
+                <li>Salesforce</li>
+                <li>Docker</li>
+                <li>Terraform</li>
+                <li>Cloudformation</li>
+                <li>CI/CD</li>
+                <li>PYTHON</li>
+                <li>SQL</li>
+                <li>FRONT-END DEVELOPMENT</li>
+                <li>BACK-END DEVELOPMENT</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container education">
+            <h2>Education</h2>
+            <div class="project">
+                <ol>
+                    <li>
+                        <h3>B.E. in Electronics and Telecommunication</h3>
+                        <p>Prof. Ram Meghe Institute of Technology and Research Badnera, 2021</p>
+                    </li>
+                    <li>
+                        <h3>Diploma in Electronics and Telecommunication</h3>
+                        <p>Government Polytechnic College of Amravati, 2018</p>
+                    </li>
+                </ol>
+            </div>
+            <!-- Add more education entries as needed -->
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container experience">
+            <h2>Work Experience</h2>
+            <div class="experience">
+                <h3>Pi Square Tech</h3>
+                <ul>
+                    <li>AWS/DevOps Cloud Engineer
+                        <ul>
+                            <li> Description :
+                                <p>
+                                    <ul>
+                                        <li>Proficient and experienced in utilizing a diverse range of AWS compute, storage, security, and analytics services, showcasing hands-on expertise with components such as RDS, ASG, ELB, EC2, IAM, SQS, and SNS.</li>
+                                        <li>Extensive hands-on experience with AWS components enriched through diverse lab scenarios, demonstrating a comprehensive understanding of cloud architecture and services.</li>
+                                        <li>Skilled in Docker and Linux commands and operations, contributing to efficient software delivery and reducing downtime through Python scripting in the CI/CD pipeline.</li>
+                                        <li>Demonstrated strong troubleshooting and problem-solving skills in AWS environments, ensuring robust and reliable cloud infrastructure.</li>
+                                        <li>Actively pursuing Japanese Language Proficiency at N3 level, can speak Japanese N4 level, complementing a global skill set.</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>PLtive.Inc</h3>
+                <ul>
+                    <li>Analyst
+                        <ul>
+                            <li> Description :
+                                <p>
+                                    <ul>
+                                        As an Analyst at Plative Inc., I specialized in using the Salesforce platform to turn client needs into practical solutions. I efficiently managed the Salesforce platform, making sure tasks and client requirements were met smoothly. This role enhanced my skills in navigating and optimizing Salesforce, ensuring successful project outcomes. My approach blends technical expertise with strategic problem-solving to deliver effective solutions aligned with client expectations and organizational goals.
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>BSNL </h3>
+                <ul>
+                    <li>Trainee (Internship)
+                        <ul>
+                            <li> Description :
+                                <p>
+                                    <ul>
+                                        Interned with BSNL, gaining valuable insights into telephonic call procedures. Developed a comprehensive understanding of the crucial hardware components integral to call connectivity. Actively engaged in hands-on experiences during a summer/winter internship, enhancing proficiency in managing diverse telecommunication processes. Acquired practical knowledge and heightened appreciation for the critical role of hardware in ensuring seamless telecommunication functionality.
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Add more work experience entries as needed -->
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <ul>
+                <li> Cloud Architecture Design</li>
+                <li>Infrastructure as Code (IaC)</li>
+                <li> Continuous Integration and Continuous Deployment (CI/CD)</li>
+                <li> Configuration Management</li>
+                <li> Containerization and Orchestration:</li>
+                <li>Monitoring and Logging:</li>
+                <li> Security and Compliance</li>
+                <li> Support and Troubleshooting:</li>
+                <li>Web Development</li>
+                <!-- Add more services as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1 :</h3>
+                <ul>
+                    <li>Safe Driving With Compulsory Helmet
+                        <ul>
+                            <li> Description :
+                                <p>
+                                    In this project, I engineered a model poised to revolutionize bike safety, mandating helmet usage before ignition. This innovative initiative encapsulates my passion for leveraging technology for social betterment.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Project 2 :</h3>
+                <ul>
+                    <li>AWS 3 Tier Architecture
+                        <ul>
+                            <li> Description :
+                                <p>
+                                    I architected and implemented a robust AWS 3-tier application using EC2, VPC, VPC Peering, NGINX, Redis, and Python Flask, delivering a scalable and high-performance cloud-based solution.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Project 3 :</h3>
+                <ul>
+                    <li>Upload files to S3 Bucket Using Rest API
+                        <ul>
+                            <li> Description :
+                                <p>
+                                    In the realm of modern web development, the capacity to seamlessly handle file uploads is paramount. My expertise extends to crafting an essential solution in this domain - the setup of a REST API for uploading files directly to an S3 bucket.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Add more project entries as needed -->
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container certifications">
+            <h2>Certifications</h2>
+            <div class="certification">
+                <h3>AWS Associate Solution Architect</h3>
+                <p>Amazon Web service(AWS), 2023</p>
+            </div>
+            <div class="certification">
+                <h3>Salesforce Administrator</h3>
+                <p>Trailhead, 2022</p>
+            </div>
+            <div class="certification">
+                <h3>AWS Elastic Disaster Recovery</h3>
+                <p>Amazon Web service(AWS), 2023</p>
+            </div>
+            <!-- Add more certification entries as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" style="background-color: #4CAF50; color: #fff;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p style="background-color: #009688;">&copy; 2023 Aditya Mawalkar | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
